@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: block;
+    margin: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: darkgray;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 25px;
+    height: 100px;
+    min-height: 100px;
+}
+
+header div {
+    background-color: aqua;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 55px;
+    color: darkgrey;
+    margin: 0px;
+}
+
+
+header a {
+    color:cyan;
+    text-decoration: none;
+    border-bottom: 3px solid cyan;
+}
+
+
+
+header div a {
+    color: darkgray;
+    align-items: flex-start;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}
+
+header nav ul li a {
+    font-size: 1.25vw;
+    padding: 6px 10px;
+}
+
+footer {
+background-color: white;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 80%;
+padding: 40px 35px;
+}
+
+footer ul li a {
+    font-weight: lighter;
+    font-size: 1.55vw;
+    padding: 10px 15px;
+}
+
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+footer h2 {
+    border-bottom: 2px solid darkblue;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url("../images/banner-1058142_960_720.webp");
+    background-size: cover;
+    align-items: flex-start;
+    height: 145px;
+    min-height: 145px;
+    background-position: center center;
+}
+
+
+.box1 {
+    display: flex;
+    background-color: grey;
+    color: rgb(2, 78, 118);
+    width: 93%;
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: auto;
+    align-items: flex-start;
+    padding: 20px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(0,255,255);
+    margin: 3.5%;
+    background-position: center;
+}
+
+.box2 {
+    display: flex;
+    background-color: grey;
+    color: rgb(2, 78, 118);
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: auto;
+    align-items: flex-start;
+    padding: 20px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(0,255,255);
+    margin: 3.5%;
+    background-position: center center;
+    float: left;
+    width: 35%;
+    height: 200px;
+    background-image: url(../images/led_wall.webp);
+    background-size: 500px;
+}
+
+.box3 {
+    display: flex;
+    background-color: grey;
+    color: rgb(2, 78, 118);
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: auto;
+    align-items: flex-start;
+    padding: 20px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(0,255,255);
+    margin: 3.5%;
+    float: right;
+    width: 35%;
+    height: 200px;
+}
+
+.box4 {
+    display: flex;
+    background-color: grey;
+    color: rgb(2, 78, 118);
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: auto;
+    align-items: flex-start;
+    padding: 20px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(0,255,255);
+    margin: 3.5%;
+    float: left;
+    width: 35%;
+    height: 200px;
+}
+
+.box5 {
+    display: flex;
+    background-color: grey;
+    color: rgb(2, 78, 118);
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: auto;
+    align-items: flex-start;
+    padding: 20px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(0,255,255);
+    margin: 3.5%;
+    float: right;
+    width: 35%;
+    height: 200px;
+    background-image: url(../images/hero-bg.jpg);
+    background-size: 500px;
+}
+
+.projects p {
+    font-weight: bold;
+    font-size: 55px;
+    color: cyan;
+    margin: 0px;
+}
