@@ -1,247 +1,240 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    display: block;
-    margin: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #d9dcd6;
-
+  display: block;
+  margin: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d9dcd6;
 }
 
 header {
-    display: flex;
-    background-color: darkgray;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px 25px;
-    height: 100px;
-    min-height: 100px;
+  display: flex;
+  background-color: darkgray;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 25px;
+  height: 100px;
+  min-height: 100px;
 }
 
 header div {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 55px;
-    color: darkgrey;
-    margin: 0px;
+  font-weight: bold;
+  font-size: 55px;
+  color: darkgrey;
+  margin: 0px;
 }
-
 
 header a {
-    color:cyan;
-    text-decoration: none;
-    border-bottom: 3px solid cyan;
+  color: cyan;
+  text-decoration: none;
+  border-bottom: 3px solid cyan;
 }
 
-
-
 header div a {
-    color: darkgray;
-    align-items: flex-start;
+  color: darkgray;
+  align-items: flex-start;
 }
 
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 header nav ul li a {
-    font-size: 1.25vw;
-    padding: 6px 10px;
+  font-size: 1.25vw;
+  padding: 6px 10px;
 }
 
 footer {
-background-color: #d9dcd6;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-width: 98%;
-padding: 40px 35px;
+  background-color: #d9dcd6;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 98%;
+  padding: 40px 35px;
 }
 
 footer ul li a {
-    font-weight: lighter;
-    font-size: 1.55vw;
-    padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  padding: 10px 15px;
 }
 
-
 footer ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 footer h1 {
-    border-bottom: 2px solid darkblue;
+  border-bottom: 2px solid darkblue;
+}
+
+.aboutme-style {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutme-margin {
+  margin: 30px;
+}
+
+.aboutme-txt {
+  border-left: darkblue solid 3px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutme-txt p {
+  padding-left: 30px;
+}
+
+.aboutme-txt2 {
+  border-right: darkblue solid 3px;
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-image: url("../images/banner-1058142_960_720.webp");
-    background-size: cover;
-    align-items: flex-start;
-    height: 145px;
-    min-height: 145px;
-    background-position: center center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url("../images/banner-1058142_960_720.webp");
+  background-size: cover;
+  align-items: flex-start;
+  height: 145px;
+  min-height: 145px;
+  background-position: center;
 }
 
+.workstyle {
+  margin: 30px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-left: darkblue 3px solid;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  margin: 9px;
+}
+
+.containersize {
+  width: 100%;
+}
 
 .box1 {
-    clear: both;
-    display: flex;
-    background-color: grey;
-    color: rgb(2, 78, 118);
-    width: 93%;
-    height: 500px;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-size: auto;
-    align-items: flex-start;
-    padding: 25px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgb(0,255,255);
-    margin: .5%;
-    background-position: center;
-    float: right;
-    width: 72.5%;
-    margin-right: 80px;
-    background-image: url(../images/surfreport.jpg);
-    background-size: cover;
-    
+  background-color: grey;
+  color: rgb(2, 78, 118);
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(0, 255, 255);
+  margin: 0.5%;
+  background-position: center;
+  background-image: url(../images/surfreport.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin: 10px;
 }
 
 .box2 {
-    display: flex;
-    background-color: grey;
-    color: rgb(2, 78, 118);
-    width: 25%;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-size: auto;
-    align-items: flex-start;
-    padding: 60px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgb(0,255,255);
-    margin: 1%;
-    background-position: center center;
-    width: 35%;
-    height: 200px;
-    background-image: url(../images/led_wall.webp);
-    margin-left: 440px;
-    float: left;
+  background-color: grey;
+  color: rgb(2, 78, 118);
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(0, 255, 255);
+  background-position: center center;
+  background-image: url(../images/led_wall.webp);
+  width: 50%;
+  margin: 10px;
+  height: 250px;
 }
 
 .box3 {
-    display: flex;
-    background-color: grey;
-    color: rgb(2, 78, 118);
-    width: 35%;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-size: auto;
-    align-items: flex-start;
-    padding: 60px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgb(0,255,255);
-    margin: 1%;;
-    width: 35%;
-    height: 200px;
-    float: right;
-    margin-right: 77px;
-    background-image: url(../images/what-is-apr-hero.webp);
-    background-size: cover;
+  background-color: grey;
+  color: rgb(2, 78, 118);
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(0, 255, 255);
+  background-image: url(../images/what-is-apr-hero.webp);
+  background-size: cover;
+  width: 50%;
+  margin: 10px;
+  height: 250px;
 }
 
 .box4 {
-    display: flex;
-    background-color: grey;
-    color: rgb(2, 78, 118);
-    width: 25%;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-size: auto;
-    align-items: flex-start;
-    padding: 60px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgb(0,255,255);
-    margin: 1%;
-    width: 35%;
-    height: 200px;
-    float: left;
-    margin-left: 440px;
-    background-image: url(../images/2560x1440-teal-blue-solid-color-background.jpg);
-    background-size: cover;
+  background-color: grey;
+  color: rgb(2, 78, 118);
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(0, 255, 255);
+  background-image: url(../images/2560x1440-teal-blue-solid-color-background.jpg);
+  background-size: cover;
+  width: 50%;
+  margin: 10px;
+  height: 250px;
 }
 
 .box5 {
-    display: flex;
-    background-color: grey;
-    color: rgb(2, 78, 118);
-    width: 25%;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-size: auto;
-    align-items: flex-start;
-    padding: 60px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgb(0,255,255);
-    margin: 1%;
-    width: 35%;
-    height: 200px;
-    background-image: url(../images/hero-bg.jpg);
-    background-size: cover;
-    float: right;
-    margin-right: 77px;
+  background-color: grey;
+  color: rgb(2, 78, 118);
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(0, 255, 255);
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  width: 50%;
+  margin: 10px;
+  height: 250px;
 }
 
 .projects p {
-    font-weight: bold;
-    font-size: 55px;
-    color: cyan;
-    margin: 0px;
+  font-weight: bold;
+  font-size: 55px;
+  color: cyan;
+  margin: 0px;
 }
 
 .boxstyle p {
-    background-color: turquoise;
-    color: darkblue;
-    align-items: flex-start;
-}
-
-.sidebar {
-    margin-left: 20px;
-    padding: 20px;
-    float: left;
-    width: 18%;
-    height: 100%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border-right: 3px solid darkblue;
+  background-color: turquoise;
+  color: darkblue;
+  align-items: flex-start;
 }
 
 .boxstyle:hover {
-    cursor: pointer;
-    transform: scale(1);
-    transform-origin: top left;
-    background-color: yellow;
+  cursor: pointer;
+  transform: scale(1);
+  transform-origin: top left;
+  background-color: yellow;
 }
 
+.sidebar {
+  margin-left: 20px;
+  width: 18%;
+  height: 100%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 20px;
+  border-right: 3px solid darkblue;
+}
+
+.boxes {
+  display: flex;
+}
