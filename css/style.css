@@ -1,13 +1,14 @@
 header {
   display: flex;
   background-color: darkgray;
-  height: 100px;
-  min-height: 80px;
+  height: 90px;
+  min-height: 90px;
   width: 100%;
   color: aqua;
 }
 
 header h1 {
+  width: 125%;
   background-color: aqua;
 }
 
@@ -26,40 +27,6 @@ header h1 {
   align-items: flex-start;
   justify-content: space-between;
   float: right;
-}
-
-#headertitle h1 {
-  font-weight: bold;
-  font-size: 55px;
-  color: darkgrey;
-  display: inline-block;
-  text-align: right;
-  font-weight: 60em;
-}
-
-#headernav nav > ul {
-  display: flex;
-  width: 100%;
-  list-style: none;
-  justify-content: flex-end;
-}
-
-#headerNav nav > ul > li {
-  font-size: 1.5em;
-  display: inline-block;
-  margin-right: 2em;
-  border-bottom: solid;
-}
-
-#headertitle {
-  width: 10%;
-  min-width: 16em;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.navstyle {
-  border-bottom: 3px solid darkblue;
 }
 
 footer {
@@ -89,13 +56,55 @@ footer h1 {
   border-bottom: 2px solid darkblue;
 }
 
+#headertitle h1 {
+  font-weight: bold;
+  font-size: 45px;
+  color: darkgrey;
+  display: inline-block;
+  text-align: right;
+  font-weight: 60em;
+}
+
+#headernav nav > ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+#headerNav nav > ul > li {
+  font-size: 1.5em;
+  display: inline-block;
+  margin-right: 2em;
+  border-bottom: solid;
+}
+
+#headertitle {
+  width: 9%;
+  min-width: 15%;
+  display: inline-block;
+  margin-bottom: 75px;
+}
+
+.navstyle {
+  border-bottom: 3px solid aqua;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 .aboutme-style {
   display: flex;
   flex-direction: row;
 }
 
+.aboutme-style h2 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
 .aboutme-margin {
-  margin: 30px;
+  margin: 39px;
 }
 
 .aboutme-txt {
@@ -124,8 +133,23 @@ footer h1 {
   background-position: center;
 }
 
+.subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: aqua;
+  margin-top: auto;
+  margin-bottom: 1em;
+  margin-right: 2em;
+  margin-left: auto;
+}
+
 .workstyle {
   margin: 31px;
+}
+
+.workstyle h2 {
+  font-size: 50px;
+  font-weight: bolder;
 }
 
 .content {
@@ -157,7 +181,7 @@ footer h1 {
   background-position: center;
   background-image: url(../images/surfreport.jpg);
   background-size: cover;
-  width: 100%;
+  width: 98%;
   height: 500px;
   margin: 10px;
 }
@@ -168,9 +192,9 @@ footer h1 {
   border-style: solid;
   border-width: 4px;
   border-color: rgb(0, 255, 255);
-  background-position: center center;
+  background-position: center;
   background-image: url(../images/led_wall.webp);
-  width: 50%;
+  width: 48.7%;
   margin: 10px;
   height: 250px;
 }
@@ -183,7 +207,7 @@ footer h1 {
   border-color: rgb(0, 255, 255);
   background-image: url(../images/what-is-apr-hero.webp);
   background-size: cover;
-  width: 50%;
+  width: 48.7%;
   margin: 10px;
   height: 250px;
 }
@@ -196,7 +220,7 @@ footer h1 {
   border-color: rgb(0, 255, 255);
   background-image: url(../images/2560x1440-teal-blue-solid-color-background.jpg);
   background-size: cover;
-  width: 50%;
+  width: 48.7%;
   margin: 10px;
   height: 250px;
 }
@@ -209,7 +233,7 @@ footer h1 {
   border-color: rgb(0, 255, 255);
   background-image: url(../images/hero-bg.jpg);
   background-size: cover;
-  width: 50%;
+  width: 48.7%;
   margin: 10px;
   height: 250px;
 }
@@ -225,6 +249,7 @@ footer h1 {
   background-color: turquoise;
   color: darkblue;
   align-items: flex-start;
+  margin-top: 160px;
 }
 
 .boxstyle:hover {
