@@ -12,6 +12,14 @@ header h1 {
   background-color: aqua;
 }
 
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
 #headernav {
   width: 75%;
   display: inline-block;
@@ -29,33 +37,6 @@ header h1 {
   float: right;
 }
 
-footer {
-  background-color: #d9dcd6;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 98%;
-  padding: 40px 35px;
-}
-
-footer ul li a {
-  font-weight: lighter;
-  font-size: 1.55vw;
-  padding: 10px 15px;
-}
-
-footer ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-footer h1 {
-  border-bottom: 2px solid darkblue;
-}
-
 #headertitle h1 {
   font-weight: bold;
   font-size: 45px;
@@ -65,20 +46,6 @@ footer h1 {
   font-weight: 60em;
 }
 
-#headernav nav > ul {
-  display: flex;
-  width: 100%;
-  list-style: none;
-  justify-content: flex-end;
-}
-
-#headerNav nav > ul > li {
-  font-size: 1.5em;
-  display: inline-block;
-  margin-right: 2em;
-  border-bottom: solid;
-}
-
 #headertitle {
   width: 9%;
   min-width: 15%;
@@ -86,9 +53,52 @@ footer h1 {
   margin-bottom: 75px;
 }
 
+footer {
+  display: flex;
+  height: 90px;
+  min-height: 90px;
+  width: 100%;
+}
+
+footer h2 {
+  border-right: 3px solid darkblue;
+}
+
+#footernav {
+  width: 65%;
+  display: inline-block;
+  align-items: center;
+  padding: 1em;
+  color: aqua;
+}
+
+#footernav nav {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  float: right;
+  margin-top: 20px;
+}
+
+#footertitle h2 {
+  font-weight: bolder;
+  font-size: 45px;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+#footerrtitle {
+  width: 9%;
+  min-width: 15%;
+  display: inline-block;
+  margin: 15px;
+}
+
 .navstyle {
   border-bottom: 3px solid aqua;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -104,7 +114,7 @@ footer h1 {
 }
 
 .aboutme-margin {
-  margin: 39px;
+  margin: 50px;
 }
 
 .aboutme-txt {
@@ -113,12 +123,14 @@ footer h1 {
   flex-wrap: wrap;
 }
 
-.aboutme-txt p {
-  padding-left: 30px;
+.aboutme-txt img {
+  margin-left: 500px;
+  border: 10px solid aqua;
+  border-radius: 20px;
 }
 
-.aboutme-txt2 {
-  border-right: darkblue solid 3px;
+.aboutme-txt p {
+  padding-left: 50px;
 }
 
 .hero {
@@ -134,17 +146,27 @@ footer h1 {
 }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   background-color: aqua;
   margin-top: auto;
   margin-bottom: 1em;
   margin-right: 2em;
   margin-left: auto;
+  height: 50px;
+  border-color: darkgray;
+  border-style: 3px;
+  border-style: solid;
+}
+
+.subtitle p {
+  color: darkgrey;
+  padding: auto;
+  margin-top: 15px;
 }
 
 .workstyle {
-  margin: 31px;
+  margin: 50px;
 }
 
 .workstyle h2 {
@@ -231,11 +253,13 @@ footer h1 {
   border-style: solid;
   border-width: 4px;
   border-color: rgb(0, 255, 255);
-  background-image: url(../images/hero-bg.jpg);
-  background-size: cover;
   width: 48.7%;
   margin: 10px;
   height: 250px;
+}
+
+.projects {
+  position: absolute;
 }
 
 .projects p {
@@ -261,4 +285,5 @@ footer h1 {
 
 .boxes {
   display: flex;
+  position: relative;
 }
