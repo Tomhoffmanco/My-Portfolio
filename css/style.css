@@ -142,7 +142,8 @@ footer h2 {
 
 .aboutme-txt p {
   padding-left: 30px;
-  font-size: 23px;
+  font-size: 25px;
+  font-style: bolder;
 }
 
 .hero {
@@ -206,7 +207,7 @@ footer h2 {
 
 .box1 {
   color: rgb(2, 78, 118);
-  width: 98%;
+  width: 100%;
   height: 500px;
   margin: 10px;
   margin: 0.5%;
@@ -218,7 +219,7 @@ footer h2 {
   border-style: solid;
   border-width: 4px;
   border-color: darkorchid;
-  width: 48.7%;
+  width: 50%;
   margin: 10px;
   height: 250px;
 }
@@ -228,7 +229,7 @@ footer h2 {
   border-style: solid;
   border-width: 4px;
   border-color: darkorchid;
-  width: 48.7%;
+  width: 50%;
   margin: 10px;
   height: 250px;
 }
@@ -287,6 +288,18 @@ footer h2 {
 @media screen and (max-width: 980px) {
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
+  .box1 {
+    margin: 0;
+    width: 100%;
+  }
+
+  .box2,
+  .box3,
+  .box4,
+  .box5 {
+    margin: 0;
+  }
+
   .aboutme-txt {
     border-left: none;
     border-top: darkcyan 3px solid;
@@ -324,9 +337,11 @@ footer h2 {
     display: block;
     border-left: none;
     border-right: none;
+    padding-left: 0%;
   }
 
   .parent {
+    display: block;
     flex-direction: column;
   }
 
@@ -334,10 +349,46 @@ footer h2 {
     flex-direction: column;
   }
 
-  @media screen and (max-width: 768px) {
+  .boxstyle {
+    width: 95%;
+    margin-top: 1.5em;
   }
 
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
+  footer {
+    display: block;
+    text-align: center;
   }
+
+  #footertitle h2 {
+    display: block;
+    border-right: none;
+    border-bottom: 3px solid darkorchid;
+  }
+
+  #footernav nav {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    margin-left: none;
+    padding-left: none;
+  }
+
+  #headertitle h1 {
+    display: block;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  #headernav nav {
+    display: block;
+    text-align: center;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
 }
