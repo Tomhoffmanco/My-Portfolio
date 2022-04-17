@@ -474,6 +474,7 @@ footer h2 {
 
   .navstyle {
     font-size: 15px;
+    border-bottom: 2px solid darkorchid;
   }
 
   .projects p {
@@ -489,7 +490,7 @@ footer h2 {
 
   #footernav {
     padding-left: 0;
-    margin-left: -10vw;
+    margin-left: -55vw;
   }
 
   #Work h2 {
