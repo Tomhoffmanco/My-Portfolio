@@ -42,7 +42,6 @@ a:focus {
   font-weight: bold;
   font-size: 45px;
   color: darkgrey;
-  display: inline-block;
   text-align: right;
   font-weight: 60em;
 }
@@ -142,8 +141,7 @@ footer h2 {
 
 .aboutme-txt p {
   padding-left: 30px;
-  font-size: 25px;
-  font-style: bolder;
+  font-size: 23px;
 }
 
 .hero {
@@ -207,7 +205,7 @@ footer h2 {
 
 .box1 {
   color: rgb(2, 78, 118);
-  width: 100%;
+  width: 98%;
   height: 500px;
   margin: 10px;
   margin: 0.5%;
@@ -219,7 +217,7 @@ footer h2 {
   border-style: solid;
   border-width: 4px;
   border-color: darkorchid;
-  width: 50%;
+  width: 48.7%;
   margin: 10px;
   height: 250px;
 }
@@ -229,7 +227,7 @@ footer h2 {
   border-style: solid;
   border-width: 4px;
   border-color: darkorchid;
-  width: 50%;
+  width: 48.7%;
   margin: 10px;
   height: 250px;
 }
@@ -287,6 +285,53 @@ footer h2 {
 
 @media screen and (max-width: 980px) {
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  header {
+    display: flex;
+    background-color: darkgray;
+    width: 100%;
+    color: aqua;
+    border: darkorchid 3px solid;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #headertitle {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  #headertitle h1 {
+    font-weight: bold;
+    font-size: 45px;
+    color: darkgrey;
+    text-align: center;
+    font-weight: 60em;
+    width: 100%;
+    height: auto;
+  }
+
+  #headernav {
+    margin-top: -2em;
+    width: 100%;
+    align-items: center;
+    color: black;
+    float: none;
+    display: block;
+  }
+
+  .navstyle {
+    font-size: 20px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  #headernav nav {
+    width: 100%;
+    justify-content: center;
+  }
 
   .box1 {
     margin: 0;
@@ -324,6 +369,11 @@ footer h2 {
     margin: 0;
   }
 
+  .boxstyle {
+    width: 95%;
+    margin-top: 1.5em;
+  }
+
   .workstyle h2 {
     display: block;
     margin: 0px;
@@ -337,21 +387,16 @@ footer h2 {
     display: block;
     border-left: none;
     border-right: none;
-    padding-left: 0%;
+    margin-left: 0;
   }
 
   .parent {
-    display: block;
     flex-direction: column;
+    margin: 12px;
   }
 
   .boxes {
     flex-direction: column;
-  }
-
-  .boxstyle {
-    width: 95%;
-    margin-top: 1.5em;
   }
 
   footer {
@@ -371,18 +416,6 @@ footer h2 {
     text-align: center;
     margin-left: none;
     padding-left: none;
-  }
-
-  #headertitle h1 {
-    display: block;
-    text-align: center;
-    flex-direction: row;
-  }
-
-  #headernav nav {
-    display: block;
-    text-align: center;
-    flex-direction: row;
   }
 }
 
