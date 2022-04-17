@@ -1,3 +1,5 @@
+/* CSS Header Styles */
+
 header {
   display: flex;
   background-color: darkgray;
@@ -53,64 +55,17 @@ a:focus {
   margin-bottom: 75px;
 }
 
-#About-Me h2 {
-  color: black;
-}
-
-#Work h2 {
-  color: black;
-}
-
-footer {
-  display: flex;
-  height: 90px;
-  min-height: 90px;
-  width: 100%;
-}
-
-footer h2 {
-  border-right: 4px solid darkorchid;
-  color: black;
-}
-
-#footernav {
-  width: 65%;
-  display: inline-block;
-  align-items: center;
-  padding: 1em;
-  color: black;
-}
-
-#footernav nav {
-  width: 75%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  float: right;
-  margin-top: 20px;
-}
-
-#footertitle h2 {
-  font-weight: bolder;
-  font-size: 45px;
-  display: inline-block;
-  padding-right: 35px;
-  padding-left: 50px;
-}
-
-#footerrtitle {
-  width: 9%;
-  min-width: 15%;
-  display: inline-block;
-  margin: 15px;
-}
-
 .navstyle {
   border-bottom: 4px solid darkorchid;
   font-size: 25px;
   font-weight: bold;
   margin-top: 10px;
+}
+
+/* About Me Section  */
+
+#About-Me h2 {
+  color: black;
 }
 
 .aboutme-style {
@@ -144,6 +99,8 @@ footer h2 {
   font-size: 23px;
 }
 
+/* Hero Banner Section */
+
 .hero {
   display: flex;
   justify-content: center;
@@ -175,6 +132,8 @@ footer h2 {
   margin-top: 15px;
 }
 
+/* Work Section Styles */
+
 .workstyle {
   margin: 50px;
 }
@@ -184,6 +143,18 @@ footer h2 {
   font-weight: bolder;
 }
 
+#Work h2 {
+  color: black;
+}
+
+/* Parent Container & Box Styles */
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  margin: 70px;
+}
+
 .content {
   flex: 1;
   display: flex;
@@ -191,12 +162,6 @@ footer h2 {
   border-left: darkorchid 4px solid;
   margin-left: 18px;
   padding-left: 2%;
-}
-
-.parent {
-  display: flex;
-  flex-direction: row;
-  margin: 70px;
 }
 
 .containersize {
@@ -283,8 +248,56 @@ footer h2 {
   position: relative;
 }
 
+/* Footer ID & Class Styles */
+
+footer {
+  display: flex;
+  height: 90px;
+  min-height: 90px;
+  width: 100%;
+}
+
+footer h2 {
+  border-right: 4px solid darkorchid;
+  color: black;
+}
+
+#footernav {
+  width: 65%;
+  display: inline-block;
+  align-items: center;
+  padding: 1em;
+  color: black;
+}
+
+#footernav nav {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  float: right;
+  margin-top: 20px;
+}
+
+#footertitle h2 {
+  font-weight: bolder;
+  font-size: 45px;
+  display: inline-block;
+  padding-right: 35px;
+  padding-left: 50px;
+}
+
+#footerrtitle {
+  width: 9%;
+  min-width: 15%;
+  display: inline-block;
+  margin: 15px;
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
 @media screen and (max-width: 980px) {
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
   header {
     display: flex;
     background-color: darkgray;
@@ -308,7 +321,6 @@ footer h2 {
     font-size: 45px;
     color: darkgrey;
     text-align: center;
-    font-weight: 60em;
     width: 100%;
     height: auto;
   }
@@ -322,15 +334,15 @@ footer h2 {
     display: block;
   }
 
+  #headernav nav {
+    width: 100%;
+    justify-content: center;
+  }
+
   .navstyle {
     font-size: 20px;
     margin-left: 0.5em;
     margin-right: 0.5em;
-  }
-
-  #headernav nav {
-    width: 100%;
-    justify-content: center;
   }
 
   .box1 {
@@ -349,6 +361,13 @@ footer h2 {
     border-left: none;
     border-top: darkcyan 3px solid;
     display: block;
+  }
+
+  .aboutme-txt img {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
   }
 
   .aboutme-margin {
@@ -402,12 +421,14 @@ footer h2 {
   footer {
     display: block;
     text-align: center;
+    margin: auto;
   }
 
   #footertitle h2 {
     display: block;
     border-right: none;
     border-bottom: 3px solid darkorchid;
+    margin: auto;
   }
 
   #footernav nav {
@@ -416,12 +437,83 @@ footer h2 {
     text-align: center;
     margin-left: none;
     padding-left: none;
+    margin: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
+  #About-Me h2 {
+    margin-top: 5px;
+    text-align: start;
+    padding-left: 10px;
+    margin-bottom: 0;
+  }
+
+  #Work h2 {
+    text-align: start;
+    padding-left: 10px;
+  }
+
+  #footertitle h2 {
+    text-align: start;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+  #footernav {
+    padding-left: 0;
+    margin-left: -20vw;
+  }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  #headernav {
+    padding-left: 0;
+    margin-left: -4vw;
+  }
+
+  .navstyle {
+    font-size: 15px;
+  }
+
+  .projects p {
+    font-size: 35px;
+  }
+
+  #About-Me h2 {
+    margin-top: 5px;
+    text-align: start;
+    padding-left: 10px;
+    margin-bottom: 0;
+  }
+
+  #footernav {
+    padding-left: 0;
+    margin-left: -10vw;
+  }
+
+  #Work h2 {
+    text-align: start;
+    padding-left: 10px;
+  }
+
+  #footertitle h2 {
+    text-align: start;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+
+  .hero {
+    width: 100vw;
+  }
+
+  header {
+    width: 100vw;
+  }
+
+  .subtitle {
+    margin-top: 75px;
+    margin-left: 5px;
+    align-items: center;
+  }
 }
