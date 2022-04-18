@@ -1,5 +1,9 @@
 /* CSS Header Styles */
 
+body {
+  background-color: slategrey;
+}
+
 header {
   display: flex;
   background-color: darkgray;
@@ -170,19 +174,19 @@ a:focus {
 
 .box1 {
   color: rgb(2, 78, 118);
-  width: 98%;
+  width: 100%;
   height: 500px;
   margin: 10px;
   margin: 0.5%;
-  border: 4px solid darkorchid;
+  border: 4px solid darkslateblue;
 }
 
 .box2 {
   color: rgb(2, 78, 118);
   border-style: solid;
   border-width: 4px;
-  border-color: darkorchid;
-  width: 48.7%;
+  border-color: darkslateblue;
+  width: 50%;
   margin: 10px;
   height: 250px;
 }
@@ -191,8 +195,8 @@ a:focus {
   color: rgb(2, 78, 118);
   border-style: solid;
   border-width: 4px;
-  border-color: darkorchid;
-  width: 48.7%;
+  border-color: darkslateblue;
+  width: 50%;
   margin: 10px;
   height: 250px;
 }
@@ -201,8 +205,8 @@ a:focus {
   color: rgb(2, 78, 118);
   border-style: solid;
   border-width: 4px;
-  border-color: darkorchid;
-  width: 48.7%;
+  border-color: darkslateblue;
+  width: 50%;
   margin: 10px;
   height: 250px;
 }
@@ -211,8 +215,8 @@ a:focus {
   color: rgb(2, 78, 118);
   border-style: solid;
   border-width: 4px;
-  border-color: darkorchid;
-  width: 48.7%;
+  border-color: darkslateblue;
+  width: 50%;
   margin: 10px;
   height: 250px;
 }
@@ -298,6 +302,48 @@ footer h2 {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
 @media screen and (max-width: 980px) {
+  .parent {
+    flex-direction: column;
+    margin: 12px;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5 {
+    margin: 0px;
+  }
+
+  .boxstyle {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+
+  .workstyle {
+    display: block;
+    margin: 0;
+  }
+
+  .workstyle h2 {
+    margin-bottom: 20px;
+    border-bottom: 3px darkslateblue solid;
+    border-left: none;
+    border-right: none;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+
+  .content {
+    display: block;
+    border-left: none;
+    border-right: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
   header {
     display: flex;
     background-color: darkgray;
@@ -314,6 +360,7 @@ footer h2 {
     padding: 0;
     height: auto;
     margin-bottom: 0;
+    margin-top: -30px;
   }
 
   #headertitle h1 {
@@ -350,16 +397,9 @@ footer h2 {
     width: 100%;
   }
 
-  .box2,
-  .box3,
-  .box4,
-  .box5 {
-    margin: 0;
-  }
-
   .aboutme-txt {
     border-left: none;
-    border-top: darkcyan 3px solid;
+    border-top: darkslateblue 3px solid;
     display: block;
   }
 
@@ -383,41 +423,6 @@ footer h2 {
     display: block;
   }
 
-  .workstyle {
-    display: block;
-    margin: 0;
-  }
-
-  .boxstyle {
-    width: 95%;
-    margin-top: 1.5em;
-  }
-
-  .workstyle h2 {
-    display: block;
-    margin: 0px;
-    border-bottom: 3px darkcyan solid;
-    border-left: none;
-    border-right: none;
-    text-align: center;
-  }
-
-  .content {
-    display: block;
-    border-left: none;
-    border-right: none;
-    margin-left: 0;
-  }
-
-  .parent {
-    flex-direction: column;
-    margin: 12px;
-  }
-
-  .boxes {
-    flex-direction: column;
-  }
-
   footer {
     display: block;
     text-align: center;
@@ -427,7 +432,7 @@ footer h2 {
   #footertitle h2 {
     display: block;
     border-right: none;
-    border-bottom: 3px solid darkorchid;
+    border-bottom: 3px solid darkslateblue;
     margin: auto;
   }
 
