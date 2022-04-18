@@ -56,10 +56,10 @@ a:focus {
 }
 
 .navstyle {
-  border-bottom: 4px solid darkorchid;
   font-size: 25px;
   font-weight: bold;
   margin-top: 10px;
+  text-decoration: underline;
 }
 
 /* About Me Section  */
@@ -474,7 +474,6 @@ footer h2 {
 
   .navstyle {
     font-size: 15px;
-    border-bottom: 2px solid darkorchid;
   }
 
   .projects p {
